@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Алегранд-салон красоты в Москве. Стрижки, окрашивание, маникюр, педикюр, косметология, массаж." />
+  <title>Салон красоты АЛЕГРАНД</title>
+  <link rel="icon" href="./Favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediastyle.css" />
+  <script defer src="./Framework/swiper-element-bundle.min.js"></script>
+  <script defer src="./Framework/jquery-3.7.1.js"></script>
+  <script defer src="./Framework/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="./Framework/owl.carousel.min.css" />
+  <script defer src="./Script/script.js"></script>
+  <script defer src="./Script/script_slider.js"></script>
+  <script defer src="./Script/script_btn_up.js"></script>
+  <script defer src="./Script/script_btn_mobile.js"></script>
+</head>
+
+<body>
+  <header class="header_conteiner">
+    <div class="Logo">
+      <a href="./index.html"><img class="logo_image" src="./Image/Logo.svg" alt="LogoAlegrand" /></a>
+    </div>
+
+    <div class="header_info">
+      <div class="header_contacts">
+        <p class="header_title">Пн-Вс: с 10:00 до 21:00</p>
+        <p class="header_title">г. Москва, ул. Героев Панфиловцев, д. 3</p>
+      </div>
+      <div class="header_burger">
+        <span></span>
+      </div>
+
+      <nav class="header_menu">
+        <ul class="header_list">
+          <li>
+            <a href="#about" class="header_link">О нас</a>
+          </li>
+          <li>
+            <a href="#servise" class="header_link">Услуги и цены</a>
+          </li>
+
+          <li>
+            <a href="#gallery" class="header_link">Галерея</a>
+          </li>
+
+          <li>
+            <a href="#contacts" class="header_link">Контакты</a>
+          </li>
+        </ul>
+        <div class="mobile_conteiner">
+          <!-- <a class="mobile_link" href="tel:+74952320661"
+              ><img src="./Image/pfone_icon.svg" alt=""
+            /></a> -->
+          <a target="_blank" class="header_messenger" href="https://wa.me/79055659998"><img
+              src="./Image/mdi_whatsapp.svg" alt="" /></a>
+          <a target="_blank" class="header_messenger" href="https://t.me/alegrand_salon"><img
+              src="./Image/Icon_telega.svg" alt="" /></a>
+        </div>
+        <div class="phone_menu">
+          <hr />
+          <img class="infotable" src="./Image/infotable.svg" alt="" />
+        </div>
+      </nav>
+    </div>
+
+    <div class="phone">
+      <div class="icon_conteiner">
+        <img class="icon_image" src="./Image/pfone_icon.svg" alt="pfone" />
+      </div>
+      <div class="icon_conteiner">
+        <span class="phone_title">
+          8 495 232-06-61 <br />
+          8 495 494-78-86
+        </span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="slogan_conteiner">
+      <div class="title_container">
+        <h1><span class="title_text">САЛОН КРАСОТЫ</span> АЛЕГРАНД</h1>
+        <div class="title_btn">
+          <a target="_blank" href="https://n914022.yclients.com/">
+            <button class="batton"></button>
+          </a>
+        </div>
+      </div>
+      <div class="image_container">
+        <img class="desktop_image" src="./Image/Rectangle227.png" alt="" />
+        <img class="phone_image" src="./Image/phonerectangle227.png" alt="" />
+        <div class="line"></div>
+      </div>
+    </section>
+
+    <section class="about_box" id="about">
+      <h2>О нас</h2>
+      <div class="about_conteiner">
+        <div class="about_image">
+          <div class="about_border_conteiner">
+            <img src="./Image/Rectangle57.png" alt="frame" />
+            <img class="about__image" src="./Image/image84.png" alt="" />
+          </div>
+        </div>
+        <div class="about_conteiner_text" id="otherchildslider">
+          <p class="about_title_text">Проведите время с пользой для себя!</p>
+          <div id="parentslider"></div>
+          <p class="about_text">
+            Алегранд - это салон, созданный для тех, кто любит ухаживать за
+            собой, ценит свое время и выбирает сервис высокого качества.
+            Каждый посетитель - любимый и долгожданный гость!
+          </p>
+          <p class="about_text">
+            <span class="phone_about">
+              В нашем салоне красоты работают опытные дипломированные
+              специалисты, косметологи и парикмахеры. Все материалы. которые
+              мы используем в работе, сертифицированы.
+            </span>
+            Современная аппаратура, качественные уходовые средства,
+            безупречный эстетический эффект и красота - все это мы гарантируем
+            нашим клиентам!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider_gradient">
+      <div class="discount">
+        Дарим скидку 10% на первое посещение нашего салона красоты
+      </div>
+      <section class="slider_box" id="childslider">
+        <div class="slider_container">
+          <div class="border_one_conteiner">
+            <img style="width: 100%" src="./Image/Rectangle58.png" alt="" />
+          </div>
+          <div class="border_one__conteiner">
+            <img style="width: 100%" src="./Image/Rectangle59.png" alt="" />
+          </div>
+          <div class="phone_border">
+            <img style="width: 100%" src="./Image/border_one_conteiner1.png" alt="" />
+          </div>
+          <swiper-container class="mySwiper" pagination="true" pagination-clickable="false" navigation="false"
+            space-between="30" centered-slides="true" autoplay-delay="6000" autoplay-disable-on-interaction="false">
+            <swiper-slide id="image">
+              <img src="./Image/slide31.png" alt="" />
+              <img src="./Image/slide32.png" alt="" />
+              <img src="./Image/slide33.png" alt="" />
+            </swiper-slide>
+            <swiper-slide id="image">
+              <img src="./Image/slide34.png" alt="" />
+              <img src="./Image/slide35.png" alt="" />
+              <img src="./Image/slide36.png" alt="" />
+            </swiper-slide>
+            <swiper-slide id="image">
+              <img src="./Image/slide37.png" alt="" />
+              <img src="./Image/slide38.png" alt="" />
+              <img src="./Image/slide39.png" alt="" />
+            </swiper-slide>
+            <swiper-slide id="image">
+              <img src="./Image/slide310.png" alt="" />
+              <img src="./Image/slide311.png" alt="" />
+              <img src="./Image/slide312.png" alt="" />
+            </swiper-slide>
+
+            <swiper-slide id="phoneimage">
+              <img class="phone__image" src="./Image/slide1.png" alt="" />
+            </swiper-slide>
+            <swiper-slide id="phoneimage">
+              <img class="phone__image" src="./Image/slide2.png" alt="" />
+            </swiper-slide>
+            <swiper-slide id="phoneimage">
+              <img class="phone__image" src="./Image/slide3.png" alt="" />
+            </swiper-slide>
+            <swiper-slide id="phoneimage">
+              <img class="phone__image" src="./Image/slide4.png" alt="" />
+            </swiper-slide>
+            <swiper-slide id="phoneimage">
+              <img class="phone__image" src="./Image/slide13.png" alt="" />
+            </swiper-slide>
+            <swiper-slide id="phoneimage">
+              <img class="phone__image" src="./Image/slide14.png" alt="" />
+            </swiper-slide>
+            <swiper-slide id="phoneimage">
+              <img class="phone__image" src="./Image/slide15.png" alt="" />
+            </swiper-slide>
+            <swiper-slide id="phoneimage">
+              <img class="phone__image" src="./Image/slide16.png" alt="" />
+            </swiper-slide>
+            <swiper-slide id="phoneimage">
+              <img class="phone__image" src="./Image/slide17.png" alt="" />
+            </swiper-slide>
+            <swiper-slide id="phoneimage">
+              <img class="phone__image" src="./Image/slide18.png" alt="" />
+            </swiper-slide>
+            <swiper-slide id="phoneimage">
+              <img class="phone__image" src="./Image/slide19.png" alt="" />
+            </swiper-slide>
+            <div class="swiper-pagination"></div>
+            <div class="autoplay-progress" slot="container-end">
+              <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="0"></circle>
+              </svg>
+              <span></span>
+            </div>
+          </swiper-container>
+        </div>
+      </section>
+      <section class="advantages_conteiner">
+        <div class="advantages_box">
+          <img class="advantages_image" src="./Image/advantages.svg" alt="" />
+        </div>
+        <div class="advantages_box_mobile">
+          <img class="advantages_image" src="./Image/advantages_mobile.svg" alt="" />
+        </div>
+      </section>
+    </section>
+
+    <section class="cosmetics_conteiner">
+      <!-- <div>
+          <img src="./Image/cosmetics.svg" alt="Бренды">
+        </div> -->
+    </section>
+    <section class="servise_gradient">
+      <div class="ellipse">
+        <img src="./Image/Ellipseservise.png" alt="" />
+      </div>
+      <section class="servise_conteiner" id="servise">
+        <h2>Услуги и цены</h2>
+        <p class="servise_text">
+          Уважаемые посетители, цены и сайт имеют ознакомительный характер. За
+          более точной информацией просьба обращаться по телефону.
+        </p>
+        <section class="services_wrap">
+          <div class="container-service">
+            <div class="service_box">
+              <ul class="service_items">
+                <li class="service__links">
+                  <button href="javascript:" class="service__links btn" onclick="handleClick('./Image/haircut.png')">
+                    Парикмахерские услуги
+                  </button>
+                </li>
+                <li class="service__links">
+                  <button href="javascript:" class="service__links btn" onclick="handleClick('./Image/recovery.png')">
+                    Уход и восстановление
+                  </button>
+                </li>
+                <li class="service__links">
+                  <button href="javascript:" class="service__links btn" onclick="handleClick('./Image/coloring.png')">
+                    Окрашивание волос
+                  </button>
+                </li>
+                <li class="service__links">
+                  <button href="javascript:" class="service__links btn" onclick="handleClick('./Image/manicure.png')">
+                    Маникюр
+                  </button>
+                </li>
+                <li class="service__links">
+                  <button href="javascript:" class="service__links btn" onclick="handleClick('./Image/pedicure.png')">
+                    Педикюр
+                  </button>
+                </li>
+                <li class="service__links">
+                  <button href="javascript:" class="service__links btn"
+                    onclick="handleClick('./Image/bioepilation.png')">
+                    Биоэпиляция
+                  </button>
+                </li>
+                <li class="service__links">
+                  <button href="javascript:" class="service__links btn" onclick="handleClick('./Image/massage.png')">
+                    Косметология/массаж
+                  </button>
+                </li>
+                <li class="service__links">
+                  <button href="javascript:" class="service__links btn" onclick="handleClick('./Image/massage.png')">
+                    Брови/ресницы/прокол ушей
+                  </button>
+                </li>
+                <div class="title_btn_fixed">
+                  <a target="_blank" href="https://n914022.yclients.com/">
+                    <button class="batton"></button>
+                  </a>
+                </div>
+              </ul>
+              <div class="service_picture" id="parent">
+                <img src="./Image/Rectangle244.png" alt="change logo" class="service_logo" id="photo_service" />
+                <p class="image_text" id="child">
+                  Погрузитесь в атмосферу уюта и красоты
+                </p>
+              </div>
+
+              <div class="service_items_mobile">
+                <button class="btn_mobile js-open-modal" data-modal="1">
+                  Парикмахерские услуги
+                </button>
+                <button class="btn_mobile js-open-modal" data-modal="2">
+                  Уход и восстановление
+                </button>
+                <button class="btn_mobile js-open-modal" data-modal="3">
+                  Окрашивание волос
+                </button>
+                <button class="btn_mobile js-open-modal" data-modal="4">
+                  Маникюр
+                </button>
+                <button class="btn_mobile js-open-modal" data-modal="5">
+                  Педикюр
+                </button>
+                <button class="btn_mobile js-open-modal" data-modal="6">
+                  Биоэпиляция
+                </button>
+                <button class="btn_mobile js-open-modal" data-modal="7">
+                  Косметология/массаж
+                </button>
+                <button class="btn_mobile js-open-modal" data-modal="8">
+                  Брови/ресницы/ <br />прокол ушей
+                </button>
+                <div class="modal" data-modal="1">
+                  <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                  </svg>
+
+                  <img style="width: 95%" src="./Image/Group1.svg" alt="" />
+                </div>
+
+                <div class="modal" data-modal="2">
+                  <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                  </svg>
+                  <img style="width: 95%; height: auto" src="./Image/Group2.svg" alt="" />
+                </div>
+                <div class="modal" data-modal="3">
+                  <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                  </svg>
+                  <img style="width: 95%" src="./Image/Group3.svg" alt="" />
+                </div>
+                <div class="modal" data-modal="4">
+                  <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                  </svg>
+                  <img style="width: 95%" src="./Image/Group4.svg" alt="" />
+                </div>
+                <div class="modal" data-modal="5">
+                  <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                  </svg>
+                  <img style="width: 95%" src="./Image/Group5.svg" alt="" />
+                </div>
+                <div class="modal" data-modal="6">
+                  <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                  </svg>
+                  <img style="width: 95%" src="./Image/Group6.svg" alt="" />
+                </div>
+                <div class="modal" data-modal="7">
+                  <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                  </svg>
+                  <img style="width: 95%" src="./Image/Group7.svg" alt="" />
+                </div>
+                <div class="modal" data-modal="8">
+                  <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                  </svg>
+                  <img src="./Image/Group7.svg" alt="" />
+                </div>
+
+                <!-- Подложка под модальным окном -->
+                <div class="overlay js-overlay-modal"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <div class="btn-up btn-up_hide"></div>
+    <section class="gallery_gradient">
+      <section class="gallery_conteiner" id="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery_desktop_conteiner">
+          <div id="desktop_gallery">
+            <div class="slider-container">
+              <div class="border_conteiner">
+                <img id="desktop_gallery" style="width: 100%" src="./Image/Rectangle60.png" alt="" />
+              </div>
+              <div class="border__conteiner">
+                <img id="desktop_gallery" style="width: 100%" src="./Image/Rectangle61.png" alt="" />
+              </div>
+              <div class="owl-carousel owl-theme" id="owl_slider">
+                <div>
+                  <img style="width: 100%" src="./Image/gallery1.png" alt="" />
+                </div>
+                <div>
+                  <img style="width: 100%" src="./Image/gallery2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="phone_gallery">
+          <div class="slider-container">
+            <div class="border_conteiner">
+              <img style="width: 100%" src="./Image/Rectangle58.png" alt="" />
+            </div>
+            <div class="border__conteiner">
+              <img style="width: 100%" src="./Image/Rectangle61.png" alt="" />
+            </div>
+            <div class="owl-carousel owl-theme" id="owl_slider_phone">
+              <div>
+                <img class="phone_image_gallery" src="./Image/gallery3.png" alt="" />
+              </div>
+              <div>
+                <img class="phone_image_gallery" src="./Image/gallery4.png" alt="" />
+              </div>
+              <div>
+                <img class="phone_image_gallery" src="./Image/gallery5.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="contacts_box" id="contacts">
+      <h2>Контакты</h2>
+
+      <div class="contacts_container">
+        <div class="map_desktop">
+          <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5ad500dcfdf5196283340d42b72d32062d3b5968d784c929cb638091cbc84741&amp;max-width=713&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="map_phone">
+          <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A094158da723653dbefbb8b603c73e363732a1ac0c794b013cd9b9923066aece4&amp;max-width=393&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="contacts__box">
+          <p class="contacts__text">Адрес</p>
+          <p class="contacts_text">г. Москва, ул. Героев Панфиловцев, д. 3</p>
+          <p class="contacts__text contacts_top">Телефоны</p>
+          <p class="contacts_text">8 495 232-06-61</p>
+          <p class="contacts_text">8 495 494-78-86</p>
+          <p class="contacts__text contacts_top">Режим работы</p>
+          <p class="contacts_text">Пн-Вс: с 10:00 до 21:00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer_conteiner">
+      <div class="logo_footer">
+        <img class="logo__image" src="./Image/logo2.svg" alt="LogoAlegrand" />
+      </div>
+      <div class="footer_box">
+        <div class="footer_menu_box">
+          <nav class="footer_menu">
+            <ul class="footer_list">
+              <li>
+                <a href="#about" class="footer_link">О нас</a>
+              </li>
+              <li>
+                <a href="#servise" class="footer_link">Услуги и цены</a>
+              </li>
+              <li>
+                <a href="#gallery" class="footer_link">Галерея</a>
+              </li>
+              <li>
+                <a href="#contacts" class="footer_link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="politika_link" target="_blank" href="./politika.html">Политика конфиденциальности</a>
+          <p class="footer_text">2023 © Салон красоты Алегранд</p>
+        </div>
+        <div class="messenger_box">
+          <a target="_blank" href="https://n914022.yclients.com/">
+            <button class="batton_footer">Онлайн запись</button>
+          </a>
+          <p class="footer__text">Остались вопросы?</p>
+          <p class="footer_block_text">
+            Наши администраторы помогут с ответом
+          </p>
+          <a target="_blank" class="messenger" href="https://wa.me/79055659998"><img src="./Image/mdi_whatsapp1.svg"
+              alt="" /></a>
+          <a target="_blank" class="messenger" href="https://t.me/alegrand_salon"><img src="./Image/telega1.svg"
+              alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
